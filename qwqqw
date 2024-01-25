@@ -1,0 +1,21 @@
+# Escriba el título de la página web
+title = "Bienvenido a Atla"
+
+# Escriba el encabezado de la página web
+header = """
+<h1>Bienvenido a Atla</h1>
+"""
+
+# Escriba el cuerpo de la página web
+body = """
+<p>Por favor, ingrese sus credenciales para continuar</p>
+<p>Si es un usuario corporativo, ingrese sus credenciales de cuenta NT. De lo contrario, ingrese las credenciales que le proporcionaron en los campos correspondientes.</p>
+<p><a href="https://github.com/Roodrygoo">¿Desea solicitar o modificar un proyecto con nosotros?</a></p>
+"""
+
+# Combine el título, el encabezado y el cuerpo para crear la página web
+page = f"<html><head><title>{title}</title></head><body>{header}{body}</body></html>"
+
+# Muestre la página web en Jupyter Lab
+from IPython.display import display, HTML
+display(HTML(page))
